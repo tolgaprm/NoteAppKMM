@@ -29,6 +29,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 @Composable
 fun NoteListScreen(
     viewModel: NoteListViewModel = hiltViewModel(),
+    onNavigateToDetail: (Long) -> Unit,
 ) {
     val state by viewModel.state.collectAsState()
 
@@ -39,7 +40,9 @@ fun NoteListScreen(
     Scaffold(
         floatingActionButton = {
             FloatingActionButton(
-                onClick = {},
+                onClick = {
+                    onNavigateToDetail(-1)
+                },
                 backgroundColor = Color.Black
             ) {
                 Icon(
@@ -93,7 +96,7 @@ fun NoteListScreen(
                         note = note,
                         backgroundColor = Color(note.colorHex),
                         onNoteClick = {
-
+                            onNavigateToDetail(note.id!!)
                         },
                         onDeleteClick = {
                             viewModel.deleteNoteById(note.id!!)
