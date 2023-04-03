@@ -4,7 +4,7 @@ This is a note app that uses Kotlin Multiplatform Mobile (KMM) to share code bet
 
 ## Screenshots
 
-<img src="screenshoots/andorid.png" width="180" height="360" float:left>
+<img src="screenshoots/android.png" width="180" height="360" float:left>
 <img src="screenshoots/iOS.png" width="180" height="360" float:left>
 
 ## Technologies and Frameworks
