@@ -2,6 +2,11 @@
 
 This is a note app that uses Kotlin Multiplatform Mobile (KMM) to share code between Android and iOS platforms. It allows users to create, edit and delete notes on their devices.
 
+## Screenshots
+
+<img src="screenshoots/andorid.png" width="180" height="360" float:left>
+<img src="screenshoots/iOS.png" width="180" height="360" float:left>
+
 ## Technologies and Frameworks
 
 This project uses the following technologies and frameworks:
